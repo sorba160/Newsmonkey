@@ -69,7 +69,7 @@ export default class News extends Component {
     render() {
         return (
             <div className="container my-3">
-                <h2 className="text-center"> Newsmonkey-Top headlines  {this.props.category} </h2>
+                <h2 className="text-center my-5 "> Newsmonkey-Top headlines  {this.props.category} </h2>
                 {this.state.loading && <Spinner />}
                 <div className="row">
                     {!this.state.loading && this.state.articles.map((element) => {
