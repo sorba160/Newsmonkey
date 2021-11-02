@@ -5,12 +5,12 @@ export class NewsItem extends Component {
     render() {
         let { title, description, imageurl, newsurl, author, date, source } = this.props
         return (
-            <div>
-                <div className="card my-2" style={{ width: "18rem" }}>
+            <div  style={{display:"flex",flexWrap:"wrap"}} >
+                <div className="card my-2" style={{ width: "95%",paddingleft:"60px"}}>
                     <img src={imageurl} className="card-img-top" alt="..." />
                     <div className="card-body">
 
-                        <h5 className="card-title">{title}<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <h5 className="card-title">{title}<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{marginLeft:"-40px"}}>
                             {source}
                             
                         </span></h5>
